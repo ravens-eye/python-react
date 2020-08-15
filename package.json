@@ -1,0 +1,31 @@
+{
+  "name": "python-react",
+  "version": "0.1.0",
+  "description": "A simple boilerplate full stack application built with Python, Flask and React.",
+  "main": "./server/server.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start:server": "FLASK_APP=./server/server FLASK_ENV=development flask run -p 3002",
+    "dev:start:client": "cd client && yarn run start",
+    "dev:start": "concurrently \"yarn run dev:start:client\" \"yarn run dev:start:server\"",
+    "build": "cd ./client && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raven-s-Eye-Solutions/python-react.git"
+  },
+  "keywords": [
+    "React",
+    "Flask",
+    "Python"
+  ],
+  "author": "Karsten Rabe <karstenrabe91@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raven-s-Eye-Solutions/python-react/issues"
+  },
+  "homepage": "https://github.com/Raven-s-Eye-Solutions/python-react#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
